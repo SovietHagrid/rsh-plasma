@@ -1,0 +1,6 @@
+#!/bin/sh
+# AppRun : lance l'installeur avec le Python embarqué.
+# -E : ignore les variables PYTHON* de l'utilisateur ; -s : pas de paquets utilisateur.
+# Aucune variable d'environnement n'est modifiée : les outils Plasma lancés ensuite voient l'environnement d'origine.
+HERE="$(dirname "$(readlink -f "$0")")"
+exec "$HERE/opt/python3.12/bin/python3.12" -E -s "$HERE/opt/rsh/launcher.py" "$@"

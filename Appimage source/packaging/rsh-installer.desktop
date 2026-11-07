@@ -1,0 +1,13 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Type=Application
+Name=Installeur République Hagridienne
+Name[en]=République Hagridienne Installer
+Comment=Installe le thème KDE Plasma 6 « République Hagridienne »
+Comment[en]=Installs the KDE Plasma 6 "République Hagridienne" theme
+Exec=rsh-installer
+Icon=rsh-installer
+Terminal=false
+Categories=Settings;DesktopSettings;Qt;
+StartupWMClass=rsh-installer
+X-AppImage-Name=RSH Installer
